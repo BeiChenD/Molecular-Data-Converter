@@ -1,0 +1,42 @@
+# Molecular Data Converter - Bei Chen
+
+## Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+## Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+## IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+## OS files
+.DS_Store
+Thumbs.db
+
+## Temporary files
+*.tmp
+*.temp
+
+## Large data files (keep original samples)
+# Uncomment if you want to exclude large trajectory files
+# *.dcd
+# *.psf
+
+## Output files (these are generated)
+converted_*.xyz
+converted_*.txt
+output/
+*.png
+
+## Test files
+test_*
+final_check.py
+data_summary.py
