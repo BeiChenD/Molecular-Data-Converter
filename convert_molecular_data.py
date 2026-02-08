@@ -579,8 +579,7 @@ class MolecularDataConverter:
         
         plt.suptitle('Comprehensive Elemental Distribution Analysis', 
                     fontsize=16, fontweight='bold', y=0.995)
-        
-        # Save figure
+          # Save figure
         plot_file = os.path.join(output_dir, 'elemental_distribution_analysis.png')
         plt.savefig(plot_file, dpi=300, bbox_inches='tight')
         print(f"✅ Elemental comparison plot saved to: {plot_file}")
@@ -592,7 +591,7 @@ class MolecularDataConverter:
         
         summary_file = os.path.join(output_dir, 'elemental_analysis_summary.txt')
         
-        with open(summary_file, 'w') as f:
+        with open(summary_file, 'w', encoding='utf-8') as f:
             f.write("="*70 + "\n")
             f.write("ELEMENTAL DISTRIBUTION ANALYSIS SUMMARY\n")
             f.write(f"Author: Bei Chen\n")

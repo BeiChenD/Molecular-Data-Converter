@@ -1,0 +1,55 @@
+======================================================================
+ELEMENTAL DISTRIBUTION ANALYSIS SUMMARY
+Author: Bei Chen
+Analysis Date: 2026-02-08 16:59:27.852723
+======================================================================
+
+Molecular System Information:
+  Total atoms: 64
+  Total frames analyzed: 10000
+  Time range: 0.00 - 488.83 ps
+
+======================================================================
+RADIAL DISTRIBUTION STATISTICS BY ELEMENT
+======================================================================
+
+Element: TEST
+--------------------------------------------------
+  Atoms per frame: 0.01
+  Average distance from COM: 4.636 Å
+  Standard deviation: 2.719 Å
+  Minimum distance: 0.128 Å
+  Maximum distance: 9.938 Å
+  Median distance: 4.271 Å
+  Peak density at: 3.469 Å (0.009781 atoms/Å³)
+  25th percentile: 2.302 Å
+  50th percentile: 4.271 Å
+  75th percentile: 7.194 Å
+
+======================================================================
+INTERPRETATION GUIDE
+======================================================================
+
+Radial Density Profile:
+  - Shows how atoms are distributed at different distances from droplet center
+  - Peak locations indicate preferred atomic shells
+  - Higher density = more atoms at that distance
+
+Normalized g(r):
+  - Values > 1: Higher concentration than bulk average
+  - Values < 1: Lower concentration (depletion)
+  - Values ≈ 1: Uniform distribution (bulk-like)
+
+Cumulative Distribution:
+  - Shows total number of atoms within a given radius
+  - Useful for determining droplet size and structure
+
+======================================================================
+FILES GENERATED
+======================================================================
+
+  • rdf_<element>.csv - Radial distribution data for each element
+  • distances_<element>.txt - Raw distance measurements
+  • elemental_distribution_analysis.png - Comprehensive plots
+  • elemental_analysis_summary.txt - This summary file
+
