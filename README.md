@@ -163,9 +163,48 @@ pip install MDAnalysis numpy matplotlib pandas
 - ✅ **Multiple Output Formats**: XYZ, CSV, and TXT files
 - ✅ **3D Visualization**: Molecular structure plots with Matplotlib
 - ✅ **Trajectory Analysis**: Time-series analysis of molecular dynamics
+- ✅ **Radial Distribution Functions (RDF)**: Advanced droplet analysis
+- ✅ **Elemental Distribution Analysis**: Multi-element density profiles
+- ✅ **Center of Mass Calculations**: Automated COM-based analysis
+- ✅ **Publication-Quality Plots**: 6-panel comprehensive visualization
+- ✅ **Normalized g(r) Calculations**: Standard RDF normalization
 - ✅ **Interactive Interface**: Auto-detects files and guides users
 - ✅ **Cross-Platform**: Works on Windows, macOS, and Linux
 - ✅ **Professional Documentation**: Complete setup and usage guides
+
+## 🔬 New: Advanced RDF Analysis
+
+Perfect for **droplet simulations** and **NAMD/CHARMM** trajectories!
+
+### What it calculates:
+- **Radial Density Profiles**: Atom distribution vs distance from droplet center
+- **Elemental Composition**: Individual analysis for N, H, O, C, etc.
+- **Shell Structure**: Identify atomic layers and preferred distances
+- **Cumulative Distributions**: Total atoms within given radius
+- **Normalized g(r)**: Standard pair correlation function
+
+### Output files:
+- `rdf_<element>.csv` - Numerical RDF data for each element
+- `distances_<element>.txt` - Raw distance measurements  
+- `elemental_distribution_analysis.png` - Comprehensive 6-panel plot
+- `elemental_analysis_summary.txt` - Detailed statistical report
+
+### Usage:
+```python
+# In main converter (interactive)
+python convert_molecular_data.py  # Answer "y" to RDF analysis
+
+# Standalone RDF analyzer
+python rdf_analyzer.py  # Auto-detects PSF/DCD files
+
+# Programmatic usage
+from convert_molecular_data import MolecularDataConverter
+converter = MolecularDataConverter("system.psf", "traj.dcd")
+rdf_results = converter.calculate_elemental_distribution(
+    elements=['N', 'H', 'O'],
+    max_radius=15.0
+)
+```
 
 ## 📦 Installation
 
